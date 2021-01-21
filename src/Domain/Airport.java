@@ -50,5 +50,10 @@ public class Airport {
 	public void setAirportAddress(Address airportAddress) {
 		this.airportAddress = airportAddress;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("ID: %s\tCode: %s\tName: %s", this.id, this.code, this.name);
+	}
 
 }
